@@ -24,7 +24,7 @@ This can be done through npm install in your Node.js Terminal.
 3. Once all questions are answered, you will find "Enjoy your Logo!" in your Node.JS terminal. 
 4. You can then view your new logo in a browser. 
 
-You can view a [demonstration of the Logo Maker here](https://drive.google.com/file/d/1fRDgrpvEZIIxX_Dy23-oA_m3CSJ8PJlZ/view).
+You can view a [demonstration of the Logo Maker here](https://drive.google.com/file/d/1FQ4fcONanfvKSaGU_cJCaZXhT-T7-HCF/view).
 
 ## Credits
 
