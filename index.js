@@ -1,3 +1,4 @@
+// Requiring files needed for Logo Maker
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Triangle = require('./lib/triangle');
@@ -33,6 +34,7 @@ const questions = [
     },
 ];
 
+// Creating Logo based on Triangle, Circle and Square Classes
 function createLogo(data) {
     let shapeRender = '';
     let format = '';
@@ -60,12 +62,14 @@ function createLogo(data) {
 </svg>`
 }
 
+// Writing Logo file based on input from prompted questions and the createLogo function
 function writeLogoFile(fileName, data) {
     fs.writeFile(fileName, createLogo(data), (err) =>
     err ? console.log(err) : console.log('Enjoy your Logo!')
     );
 };
 
+// Calling the question prompts for user input and using that data to call writeLogoFunction
 function init() {
     inquirer
         .prompt(questions)
@@ -74,4 +78,5 @@ function init() {
     });
 }
 
+// Initializing init function
 init();
