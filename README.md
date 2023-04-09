@@ -8,7 +8,7 @@ I was able to demonstrate what I have learned throughout the Carleton University
 
 ## Installation
 
-You will need to install [node.JS](https://nodejs.org/en/download) to run the Logo Maker. 
+You will need to install [Node.JS](https://nodejs.org/en/download) to run the Logo Maker. 
 
 You will also have to install through the package.json file: 
 
