@@ -64,15 +64,15 @@ function createLogo(data) {
 
 // Writing Logo file based on input from prompted questions and the createLogo function
 function writeLogoFile(fileName, data) {
-    if (fileName.length > 7) {
+    if (fileName.length > 12) {
         console.log("You entered too many characters for your logo, please enter 1 to 3 characters to be displayed on your logo");
     }
-    else if (fileName.length < 5) {
+    else if (fileName.length < 10) {
         console.log("You have not entered enough characters for your logo, please enter 1 to 3 characters to be displayed on your logo");
     }
     else {
     fs.writeFile(fileName, createLogo(data), (err) =>
-    err ? console.log(err) : console.log('Enjoy your Logo!')
+    err ? console.log(err) : console.log('Enjoy your Logo! >> Generated logo.svg')
     );
     };
 };
@@ -82,7 +82,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-        writeLogoFile(`${data.characters}.svg`, data)
+        writeLogoFile(`${data.characters}-logo.svg`, data)
     });
 }
 
